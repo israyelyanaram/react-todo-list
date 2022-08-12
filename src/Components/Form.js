@@ -30,7 +30,7 @@ export const Form = () => {
     if(!todoValue.trim()) {
 
     } else {
-      setTodos([...todos, todoObject]);
+      setTodos([todoObject, ...todos]);
       setTodoValue('');
     }
   }
